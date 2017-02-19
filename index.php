@@ -17,7 +17,7 @@ get_header(); ?>
 </section>-->
 
 		<!-- Left Sidebar -->
-	<div id="tertiary">
+	<div id="left-wrap">
 		
 	</div>
 	
@@ -37,25 +37,16 @@ get_header(); ?>
 		
 		<?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 		
-		<div class="post-holder">
-			<div class="left-content static">
+		<div class="post-holder" <?php post_class();?>>
+			<div class="post-time static">
 				<label><?php echo the_time('F j,Y'); ?></label>
 			</div>
 			
-			<div class="middle-content dynamic">
+			<div class="post-content dynamic">
+			<?php get_template_part('content', get_post_format());?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<a href="<?php the_permalink(); ?>"><img src=<?php echo the_post_thumbnail('index-image');?></a>
-					<h6><?php the_category(); ?></h6>
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					
-					<div class="excerpt"><?php the_excerpt(); ?><a href="" class="read">Read More</a>  </div>
-					<div class="content"><?php the_content(); ?><a href="" class="read-less">Read Less</a></div>
 					
 				</article>
-			</div>
-			
-			<div class="right-content static">
-			
 			</div>
 		</div>
 	
