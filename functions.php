@@ -29,8 +29,9 @@ add_action( 'widgets_init', 'polaris_widgets_init' );
 
 function load_essentials(){
 	wp_enqueue_script( 'jquery.min.js',  get_template_directory_uri() . '/js/jquery.min.js');
-	wp_enqueue_script( 'polaris.js', get_template_directory_uri() . '/js/polaris.js');
 	wp_enqueue_script( 'jssite.js', get_template_directory_uri() . '/js/jssite.js');
+	wp_enqueue_script( 'polaris.js', get_template_directory_uri() . '/js/polaris.js');
+
 	
 	
 }

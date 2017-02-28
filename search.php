@@ -16,7 +16,7 @@ get_header(); ?>
 <!--<section class="image-header">
 </section>-->
 
-<div id="main-wrap">
+<div class="main-wrap">
 	
 	<!-- Center Content -->
 	<div id="primary">

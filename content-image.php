@@ -1,1 +1,1 @@
-<a href="<?php the_permalink(); ?>"><img src=<?php echo the_post_thumbnail('indexmain');?></a>
+<a href="<?php the_permalink(); ?>"><img src=<?php the_post_thumbnail('indexmain');?></a>

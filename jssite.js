@@ -4,7 +4,7 @@ $(function () {
      $('.content').hide();
      $('a.read').click(function () {
          $(this).parent('.excerpt').hide();
-         $(this).closest('.dynamic').find('.content').slideDown('fast');
+         $(this).closest('.dynamic').find('.content').slideDown('fast, easeInOutQuad');
          return false;
      });
      $('a.read-less').click(function () {

@@ -21,8 +21,13 @@ get_header(); ?>
 		
 	</div>
 	
-	<div id="main-wrap">
+	<div class="main-wrap">
 	
+	
+	<div id="secondary" role="complementary">
+	<?php get_sidebar();?>
+			
+	</div>
 	<!-- Center Content -->
 	<div id="primary">
 		<?php
@@ -44,9 +49,6 @@ get_header(); ?>
 			
 			<div class="post-content dynamic">
 			<?php get_template_part('content', get_post_format());?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					
-				</article>
 			</div>
 		</div>
 	
@@ -57,10 +59,7 @@ get_header(); ?>
 	</div>		
 	
 	<!-- Right Sidebar -->
-	<div id="secondary" role="complementary">
-		<?php get_sidebar();?>
-			
-	</div>
+
 	
 
 	
