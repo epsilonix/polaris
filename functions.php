@@ -45,6 +45,7 @@ function getFeaturedImages(){
 	add_theme_support( 'post-thumbnails' );
 	add_image_size('small-thumbnail', 150, 150, true);
 	add_image_size('indexmain', 640, 400, true);
+	add_image_size('indexsticky',400, 250, true);
 	
 	//Add post format support
 	add_theme_support('post-formats', array('aside','gallery','link','image'));
